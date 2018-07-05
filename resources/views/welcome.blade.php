@@ -1,45 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.welcome')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+@section('main-content')
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="background: #4682B4; color: #FFFFFF;">
+                <h3 class="panel-title">Título del panel con estilo h3</h3>
+            </div>
+            <div class="panel-body">
+                Contenido del panel
+            </div>
+            <div class="panel-footer">
+                Pie del panel
             </div>
         </div>
-    </body>
-</html>
+    </div>
+</div>
+@stop
+
+@section('js')
+
+@stop

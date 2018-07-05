@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/admin/stock');
 });
+Route::get('/admin/stock', 'StockController@IndexStock');
+Route::get('/admin/addprovs', 'ProveedoresController@Index');
+Route::get('/datatables/get', ['uses' => 'DatatablesController@Get']);
+Route::post('/admin/provs/nuevo/post', 'ProveedoresController@addProveedor');
